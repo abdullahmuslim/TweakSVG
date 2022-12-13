@@ -23,7 +23,7 @@
       The defaults are changed depending on number of argument provided.<br/><br/>
       The first argument is the name of the attribute transition is going to be affected. When set to &quot;all&quot;, it apply to all attribute that can be transitioned, with no previous or later transition of their own.<br/><br/>
       The second argument is the time it takes tobtransition completely. The unit can be in either <span style="color: #ff423b;font-weight: 300;font-size: 0.8em;">ms</span> or <span style="color: #ff423b;font-weight: 300;font-size: 0.8em;">s</span>.<br/><br/>
-      The third argument is the easing, this determine the rate of change of the value over time. (the two available now are linear and ease-in).<br/><br/>
+      The third argument is the easing, this determine the rate of change of the value over time. (the two available now are linear and ease-in). You can use ease(value1, value2 ...) to define your own own custom easing, the values range from 0.1 to 1.<br/><br/>
       The fourth argument is the delay, this is the time to wait before transitioning. It unit can be in either <span style="color: #ff423b;font-weight: 300;font-size: 0.8em;">ms</span> or <span style="color: #ff423b;font-weight: 300;font-size: 0.8em;">s</span>.<br/><br/>
       Transitioning takes place each time an SVG initialised attribute changes value. This only works for value changed with the <span style="color: #ff423b;font-weight: 300;font-size: 0.8em;">svg</span>.<span style="color: #825236;">setAttr</span>
       </p>
