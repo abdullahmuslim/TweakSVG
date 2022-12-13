@@ -10,3 +10,4 @@
 &mdash; Incorporating HTML elements.
   Add directly HTML elements inside of the SVG.<br/>
 </pre>
+[Read the documentation](Documentation.md)
