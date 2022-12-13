@@ -3,7 +3,7 @@
   version 1.0
 */
 "use strict";
-
+console.log("seen");
 let SVGns = "http://www.w3.org/2000/svg";
 let HTMLns = "http://www.w3.org/1999/xhtml";
 
