@@ -2,7 +2,7 @@
  <body>
     <h1 style="text-align: center">TweakSvg Documentation (v1.0)</h1>
     <h2> Adding TweakSVG to your project.</h2>
-    <p> simply add <i>&lt;script src=&quot;https://github.com/Code-Wizard925/TweakSVG/blob/main/index.js &quot;&gt;&lt;/script&gt; to the head of your HTML file.</p>
+    <p> simply add <i>&lt;script src=&quot;https://code-wizard925.github.io/TweakSVG/index.js &quot;&gt;&lt;/script&gt; to the head of your HTML file.</p>
     <h2 style="color: #c77d52;"></i> document. SVGs</h2>
     <p style="text-align: justify;margin-block-end: 3em;">This returns all SVG on the document object.<br/><br/> They are stored like an array but are not infact an array. You can access each element of the returned value with its index but it can not be looped.<br/><br/> Incases where you need to loop through it, consider converting it to an array using <span style="color: #ff423b;font-weight: 300;font-size: 0.8em;">array</span>.<span style="color: #825236;">from</span></p>
     <h2 style="color: #c77d52;">SVG(<span style="color: #825236;">Element</span> <sup style="color: #000;font-size: .5em;">[<span style="color: #55a04b;font-weight: 300;font-size: .5em;">HTMLElement</span>]</sup>)</h2>
