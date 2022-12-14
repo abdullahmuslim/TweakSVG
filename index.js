@@ -64,7 +64,7 @@ SVGElement.prototype.transition = function() {
         }
         break;
       case 3:
-        if(!/^[A-Za-z]+$|^ease\(.*\)$/.test(arguments[2])){
+        if(!/^[A-Za-z]+(?:[0-9]*)?(-[A-Za-z]+(?:[0-9]*)?)*$|^ease\(.*\)$/.test(arguments[2])){
           throw new paramError("positional argument 3: unacceptable or invalid easeing function");
         }
         break;
@@ -190,11 +190,20 @@ function $EaseToCubic(){
     case "linear":
       return [1, 1];
       break;
+    case "ease":
+      return [0.8,0.5, 0.5, 1];
+      break;
     case "ease-in":
+      return [1, 0.5, 0.5];
+      break;
+    case "ease-out":
+      return[0.5, 0.5, 1];
+      break;
+    case "ease-in-out":
       return [1, 0.5, 0.5, 1];
       break;
   }
-  if (/^ease\(.+\)$/.test(arguments[0])){
+  if (/^\(.+\)$/.test(arguments[0])){
     let values = arguments[0].match(/[0-9]+(?:\.[0-9]+)? *(, *[0-9]+(?:\.[0-9]+)?)*/)[0];
     values = values.split(",");
     for (let i = 0; i < values.length; i++){
